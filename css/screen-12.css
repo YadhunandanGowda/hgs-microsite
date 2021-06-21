@@ -1,0 +1,13 @@
+.screen-container {
+  background: #66ccff;
+}
+button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+button.lock {
+  right: 80px;
+}

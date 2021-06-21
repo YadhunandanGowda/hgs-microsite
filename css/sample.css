@@ -1,0 +1,272 @@
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(../fonts/Raleway-ExtraBold.ttf), url(../fonts/Raleway-ExtraBold.eot);
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../fonts/Raleway-Light.ttf), url(../fonts/Raleway-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Raleway-ExtraBold', sans-serif;
+}
+
+#Don_the_Avatar_of_your_choice-2 {
+    font-family: 'Raleway-Light', sans-serif;
+}
+
+.main-cntr {
+    background: #92e3ff;
+}
+.screen-container {
+    width: 100vw;
+    background: #92e3ff;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+ .screen-container .individual {
+    flex:none;
+    /* position: absolute;
+    opacity: 1;
+    top: 0px;
+    left: 100vw; */
+}
+/*
+.screen-container .individual:first-child {
+    top: 0px;
+    left: 0px;
+} */
+
+#screen-1 .check-dot,
+#screen-1 .avathar {
+    cursor: pointer;
+}
+
+.next,
+.start, #screen-3 .ques-icon {
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.start:active .layer-2,
+.next:active .layer-2 {
+    transform: translate(5px, 5px);
+}
+
+.start .one,
+.next .one {
+    transition: 0.4s;
+    transform: translateX(15px);
+}
+
+.start .three,
+.next .three {
+    transition: 0.5s;
+    transform: translateX(-15px);
+}
+
+.start:hover .one,
+.next:hover .one {
+    transform: translateX(0px);
+}
+
+.start:hover .three,
+.next:hover .three {
+    transform: translateX(0px);
+}
+
+.start:hover .two path,
+.next:hover .two path {
+    animation: color_anim 1s infinite 0.4s;
+}
+
+.start:hover .one path,
+.next:hover .one path {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.start:hover .three path,
+.next:hover .three path {
+    animation: color_anim 1s infinite 0.6s;
+}
+
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #FBC638;
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+#screen-1 .window,
+#screen-1 .avathar,
+#screen-1 .check-dot,
+#hello-msg path,
+#screen-2 .popup,
+#screen-1 .check-dot .green-ccl,
+.trainer,
+.popup,
+#screen-2 .prev,
+#screen-2 .next {
+    opacity: 0;
+}
+
+
+ .ques-icon {
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0px;
+}
+
+/*
+.ques-icon .outer:first-child {
+    animation: fade 1s infinite;
+}
+
+.ques-icon .outer:last-child {
+    animation: fade 1s infinite 0.2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
+#quest-sec {
+    position: fixed;
+    top: 0px;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#quest-sec svg.model {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    left: 30%;
+    top: 0px;
+}
+
+
+/* .close-btn {
+    position: absolute;
+    top: 25px;
+    left: 24vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    border: solid 2px #ff6c40;
+    cursor: pointer;
+}
+
+.close-btn svg {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+.close-btn .btn {
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+} */
+
+#quest-sec .option {
+    cursor: pointer;
+}
+
+#quest-sec .option:active .background{
+    transform: translateY(4px);
+}
+
+
+/* @media only screen and (max-width: 1440px) {
+    .close-btn {
+        left: 23vw;
+    }
+} */
+
+/* .screen-container svg {
+    position: absolute;
+} */
+
+.oeiu {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+}
+
+div.cmchar {
+    position: absolute;
+    width: 16%;
+    height: auto;
+    top: 18%;
+}
+
+div.char1 {
+    left: 22%;
+}
+
+div.char2 {
+    left: 32%;
+    top: 17.8%; 
+}
+
+div.char3 {
+    left: 42%;  
+    top: 18.3%;  
+}
+
+div.char4 {
+    left: 52%;    
+}
+
+div.char5 {
+    left: 62%;    
+}
+
+div.char6 {
+    left: 72%;
+}
